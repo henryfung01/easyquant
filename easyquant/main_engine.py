@@ -65,11 +65,11 @@ class MainEngine:
         for quotation_engine in quotation_engines:
             self.quotation_engines.append(quotation_engine(self.event_engine, self.clock_engine))
 
-        # 保存读取的策略类
+        # 保存读取的策略类 密码part5:0ch
         self.strategies = OrderedDict()
         self.strategy_list = list()
 
-        # 是否要动态重载策略
+        # 是否要动态重载策略 
         self.is_watch_strategy = False
         # 修改时间缓存
         self._cache = {}
